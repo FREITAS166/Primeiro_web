@@ -1,0 +1,89 @@
+.fone{
+    max-width: 200px;
+    
+}
+.mouse{
+    max-width: 200px;
+}
+.monitor{
+    max-width: 200px;
+}
+.gabinete{
+    max-width: 200px;
+}
+.teclado{
+    max-width: 200px;
+}
+
+body{
+    margin: 0%;
+    height: 100vh;
+    width:100vh ;
+    background: linear-gradient(#f9fcf4, #7bcc55d2);
+}
+.barra_pesquisa{
+    position: absolute;
+    top: 1%;
+    left: 70%;
+    background: white;
+    border-radius: 100px;
+    height: 40px;
+    line-height: 30px;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra_text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 12px;
+    width: 0;
+    transition: .4s;
+}
+
+.botao_pesquisa{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+    background: rgb(147, 241, 147);
+    
+}
+
+.barra_pesquisa:hover > .barra_text{
+    width: 240px;
+    padding: 0 6px;
+    
+}
+
+.barra_pesquisa:hover > .botao_pesquisa{
+    background: white;
+}
+
+
+.logo{
+    margin-left: -1%;
+    max-height: 60px;
+    max-width: 640px;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-11px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
